@@ -1,0 +1,21 @@
+class Circle {
+    private $radius;
+
+    public function __construct($radius) {
+        $this->radius = $radius;
+    }
+
+    public function getArea() {
+        return pi() * $this->radius**2;
+    }
+
+    public function getCircumference() {
+        return 2 * pi() * $this->radius;
+    }
+}
+
+$circle = new Circle(5);
+$area = $circle->getArea();
+$circumference = $circle->getCircumference();
+echo "Area: $area\n";
+echo "Circumference: $circumference\n";
